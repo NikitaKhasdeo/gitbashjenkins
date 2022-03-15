@@ -1,32 +1,24 @@
 ﻿using System;
 
-namespace MyFirstCSharpProject
+namespace TypesAndVariables
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.PrintData(100);
-            System.Console.Write(1200);
+            byte byteNumber = 100; // 0-255 (256)
+            byteNumber = 255;
+
+            sbyte sbyteNumber = -128;
+            sbyteNumber = 127;
+
+            long longNumber = 120;
+
+            long anotherLongNumber = 200;
+
+           // var output = "Hi" * 4;
+
+
         }
     }
-
-    // Create your own Console class
-    class Console 
-    {
-        // Method to print data to Console window
-        public static void PrintData(int n)
-        {
-            System.Console.WriteLine(n);
-        }
-
-        public static void WriteLine(string s)
-        {
-            System.Console.WriteLine(s);
-        }
-    }
-
-
-
 }
